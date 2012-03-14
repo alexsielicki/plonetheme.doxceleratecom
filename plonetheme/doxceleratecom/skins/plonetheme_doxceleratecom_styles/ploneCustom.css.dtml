@@ -1,37 +1,45 @@
 body {
     background-color: #F6F6F6;
-}
-#portal-top {
-    background-color: #BCBBBB;
-}
-#portal-columns-wrapper {
-    width: 980px;
-    margin: 0 auto;
-}
-#portal-footer-container {
-    background-color: #DFDEDE;
-}
-#portal-footer {
-    background-color: transparent;
-    width: 980px;
-    margin: 0 auto;
-}
-#portal-colophon {
-    display: none;
+    /*font: 100% Arial, Helvetica, sans-serif;*/
+    color: #908F8F;
 }
 
 /* Header */
+#portal-top {
+    background-color: #BCBBBB;
+    height: 73px;
+}
+#portal-header {
+    width: 980px;
+    margin: 0 auto;
+}
+#portal-header p.hiddenStructure {
+    /*display: none;*/
+}
+#portal-personaltools {
+    position: absolute;
+    top: 75px;
+    padding: 3px 6px;
+    line-height: 16px;
+}
+#portal-logo {
+    float: left;
+    margin: 0;
+}
 .LSBox .searchSection {
     display: none;
 }
 #portal-globalnav {
     background-color: transparent;
+    clear: none;
+    font-size: 14px;
+    text-align: center;
 }
 #portal-globalnav li a {
     display: inline-block;
-    padding: 0.5em 1em 2em 1em;
+    padding: 23px 1em 23px 1em;
     background: transparent;
-    min-width: 6em;
+    min-width: 4em;
     white-space: normal;
     /*TODO: Once we have removed the whitespace from the nav template, this can be put back*/
     /*border-bottom: 0.1em solid White;*/
@@ -48,6 +56,68 @@ body {
 #portal-globalnav .selected a:hover {
     background: transparent;
     color: #F6F6F6;
+}
+
+/* Body */
+#portal-breadcrumbs {
+    margin-top: 20px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    color: #2F2F2F;
+}
+h1, h2 {
+    letter-spacing: normal;
+}
+h1 {
+    color: #2F2F2F;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+    padding: 6px 0 0;
+}
+h2 {
+    color: #2F2F2F;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 1.2em;
+    margin: 0 0 0 0px;
+    padding: 16px 0 15px 0px;
+}
+h3 {
+    color: #2F2F2F;
+    font-size: 1em;
+    margin-bottom: 18px;
+}
+h4 {
+    color: #2F2F2F;
+    font-size: 1em;
+    margin-bottom: 18px;
+}
+#content .documentDescription, #content #description {
+    color: #2F2F2F;
+    font-size: 1em;
+    margin-bottom: 18px;
+}
+
+/* Footer */
+#portal-columns-wrapper {
+    width: 980px;
+    margin: 0 auto;
+}
+#portal-footer-container {
+    background-color: #DFDEDE;
+}
+#portal-footer {
+    background-color: transparent;
+    width: 980px;
+    margin: 0 auto;
+}
+#portal-colophon {
+    display: none;
 }
 
 /* uncomment the below selector to get a fixed-width layout. *
