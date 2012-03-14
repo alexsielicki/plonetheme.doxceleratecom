@@ -1,8 +1,64 @@
+body {
+    background-color: #F6F6F6;
+}
+#portal-top {
+    background-color: #BCBBBB;
+}
+#portal-columns-wrapper {
+    width: 980px;
+    margin: 0 auto;
+}
+#portal-footer-container {
+    background-color: #DFDEDE;
+}
+#portal-footer {
+    background-color: transparent;
+    width: 980px;
+    margin: 0 auto;
+}
+#portal-colophon {
+    display: none;
+}
+
+/* Header */
+.LSBox .searchSection {
+    display: none;
+}
+#portal-globalnav {
+    background-color: transparent;
+}
+#portal-globalnav li a {
+    display: inline-block;
+    padding: 0.5em 1em 2em 1em;
+    background: transparent;
+    min-width: 6em;
+    white-space: normal;
+    /*TODO: Once we have removed the whitespace from the nav template, this can be put back*/
+    /*border-bottom: 0.1em solid White;*/
+    border-right-width: 0;
+    text-align: center;
+    color: #2F2F2F;
+}
+
+#portal-globalnav .selected a,
+#portal-globalnav a:hover {
+    background: transparent;
+    color: #F6F6F6;
+}
+#portal-globalnav .selected a:hover {
+    background: transparent;
+    color: #F6F6F6;
+}
+
 /* uncomment the below selector to get a fixed-width layout. *
  * 60em is equivalent to 960px in this case, and every       *
  * grid cell will be 40px with 10px padding.                 */
-
-/* #visual-portal-wrapper { width: 60em; margin: 0 auto; } */
+/*
+#visual-portal-wrapper { 
+    width: 60em; 
+    margin: 0 auto; 
+}
+*/
 
 /* To change the link color (or the navigation link  background), uncomment *
  * the selectors below, and insert new color values:                        */

@@ -49,5 +49,11 @@
       directory="stylesheets"
       layer=".interfaces.IThemeSpecific"
       />
+  
+  <!-- Alex enabling jbot -->
+  <include package="z3c.jbot" file="meta.zcml" />
+  <browser:templateOverrides
+      layer=".interfaces.IThemeSpecific"
+      directory="jbot" />
 
 </configure>
