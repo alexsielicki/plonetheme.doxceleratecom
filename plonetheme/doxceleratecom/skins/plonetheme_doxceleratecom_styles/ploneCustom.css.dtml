@@ -27,6 +27,9 @@ body {
     float: left;
     margin: 0;
 }
+#portal-searchbox {
+    margin-top: 18px;
+}
 #searchGadget {
     width: 7em;
 }
