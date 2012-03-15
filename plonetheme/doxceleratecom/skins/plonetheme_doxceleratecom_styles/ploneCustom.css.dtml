@@ -8,6 +8,7 @@ body {
 #portal-top {
     background-color: #BCBBBB;
     height: 73px;
+    margin: 0 0 40px 0;
 }
 #portal-header {
     width: 980px;
@@ -25,6 +26,9 @@ body {
 #portal-logo {
     float: left;
     margin: 0;
+}
+#searchGadget {
+    width: 7em;
 }
 .LSBox .searchSection {
     display: none;
@@ -59,8 +63,12 @@ body {
 }
 
 /* Body */
+#portal-columns-wrapper {
+    width: 980px;
+    margin: 0 auto;
+}
 #portal-breadcrumbs {
-    margin-top: 20px;
+    /*margin-top: 20px;*/
 }
 
 /* Headings */
@@ -102,22 +110,80 @@ h4 {
     font-size: 1em;
     margin-bottom: 18px;
 }
+#content .discreet, #sidebar .discreet {
+    color: #908F8F;
+}
+
+/* Body Links */
+a:link, a:visited {
+    color: #77C532;
+}
+#content a:link,
+dl.portlet a:link {
+    color: #77C532;
+    border-bottom-width: 0px;
+    text-decoration: underline;
+}
+
+#content a:visited,
+dl.portlet a:visited {
+    color: #ACC595;
+    border-bottom: 0.1em solid #ccc;
+}
+#content a:hover,
+dl.portlet a:hover {
+    color: #77C532 !important; /* This one gets an !important because it should always activate in the content area, even when state coloring is active */
+}
 
 /* Footer */
-#portal-columns-wrapper {
+#portal-bottom {
+    background-color: #DFDEDE;
+    font-size: 80%;
+}
+#portal-bottom-wrapper {
     width: 980px;
     margin: 0 auto;
+    line-height: 70px;
+    color: #2F2F2F;
 }
-#portal-footer-container {
-    background-color: #DFDEDE;
+#portal-bottom-wrapper a:link, 
+#portal-bottom-wrapper a:visited 
+{
+    color: #2F2F2F;
 }
 #portal-footer {
     background-color: transparent;
     width: 980px;
     margin: 0 auto;
+    font-size: 100%;
+    display: inline;
+    padding: 0;
 }
 #portal-colophon {
     display: none;
+}
+#portal-siteactions {
+    font-size: 100%;
+    text-align: left;
+    clear: none;
+    display: inline;
+    padding-bottom: 0;
+    margin-left: 7px;
+}
+#portal-siteactions li {
+    margin-right: 0;
+}
+#portal-siteactions li a {
+    padding: 0 7px 0 10px;
+    border-left-width: 1px;
+    border-left-style: solid;
+}
+#portal-siteactions li a:hover {
+    color: #2F2F2F;
+    text-decoration: underline;
+}
+abbr[title], acronym[title] {
+    border-bottom-width: 0px;
 }
 
 /* uncomment the below selector to get a fixed-width layout. *
